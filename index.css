@@ -5,7 +5,8 @@
 }
 
 body {
-    margin: 0px;
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgb(8, 18, 27), rgb(0, 94, 177));
 }
 
 .make {
@@ -41,6 +42,18 @@ body {
     animation: scrollAnimation 1.5s ease-out 0s 1 forwards;
 }
 
+.shrink {
+    animation: shrinkAnimation 1.5s ease-in-out 0s 1 forwards;
+}
+
+.main {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
 @keyframes artAnimation {
     from{
         filter: hue-rotate(0);
@@ -57,14 +70,14 @@ body {
     to{
         filter: hue-rotate(360deg);
         text-shadow: 
-        -50px 0 0px red,
-        -100px 0 0px orange,
-        -150px 0 0px yellow,
-        -200px 0 0px rgb(0, 255, 13),
-        -250px 0 0px rgb(0, 255, 234),
-        -300px 0 0px blue,
-        -350px 0 0px rgb(149, 0, 255),
-        -400px 0 0px violet;
+        -50px -10px 1px red,
+        -100px -20px 3px orange,
+        -150px -30px 3px yellow,
+        -200px -40px 4px rgb(0, 255, 13),
+        -250px -50px 5px rgb(0, 255, 234),
+        -300px -60px 6px blue,
+        -350px -70px 7px rgb(149, 0, 255),
+        -400px -80px 8px violet;
     }
     
 }
@@ -78,3 +91,11 @@ body {
     }
 }
 
+@keyframes shrinkAnimation {
+    from {
+        height: 100vh;
+    }
+    to {
+        height: 50vh;
+    }
+}
