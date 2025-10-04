@@ -49,7 +49,7 @@ function typeWriter2(){
         setTimeout(typeWriter2, speed);
     }else{
         document.getElementById("art").classList.add("rainbow");
-        setTimeout(shrink, 2000);
+        setTimeout(shrink, speed*10);
     }
 }
 
@@ -61,6 +61,7 @@ function artAnimation(){
 function shrink(){
     document.getElementById("intro").classList.add("shrink");
     document.getElementById("main").style.display = 'block';
+    document.getElementById("nav").style.display = 'block';
 }
 
 typeWriter();

@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    background-color: rgb(80, 47, 109);
+}
+
+.bod2 {
+    margin: 0;
+    background-color: rgb(39, 89, 122);
+}
+.navbar {
+    background-color: rgb(34, 34, 34);
+    overflow: hidden;
+    padding-left: 7%;
+}
+
+.navbar a {
+    padding: 2%;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+.main {
+    display: flex;
+    justify-content:space-evenly;
+    color:rgb(0, 197, 131);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rowobj {
+    display: flex;
+}
+
+.one {
+    background-color: rgb(53, 31, 66);
+    height: 95vh;
+    opacity: 0;
+    animation: slideup 1s ease-out 0s 1 forwards;
+}
+
+.two {
+    animation: slideup 1s ease-out .5s 1 forwards;
+    opacity: 0;
+}
+
+.three {
+    background-color: rgb(53, 31, 66);
+    padding-top: 10%;
+    height: 86vh;
+    animation: slideup2 1s ease-out 1s 1 forwards;
+    opacity: 0;
+}
+
+.four {
+    padding-top: 2%;
+    animation: slideup 1s ease-out 0s 1 forwards;
+    opacity: 0;
+}
+
+.five {
+    padding-top: 2%;
+    background-color: rgb(53, 31, 66);
+    animation: slideup 1s ease-out 0.5s 1 forwards;
+    opacity: 0;
+    height: 95vh;
+}
+
+.six {
+    padding-top: 2%;
+    animation: slideup 1s ease-out 1s 1 forwards;
+    opacity: 0;
+}
+
+.four img {
+    height: 260px;
+}
+
+.five img {
+    height: 260px;
+}
+
+.six img {
+    height: 260px;
+}
+
+.column {
+    text-align: center;
+    width: 34%;
+}
+
+p {
+    font-size: 36px;
+    padding: 3%;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+img {
+    width: 300px;;
+}
+
+@keyframes slideup {
+    from {
+        opacity: 0%;
+        padding-top: 30%;
+    }
+    to {
+        opacity: 100%;
+        padding-top: 2%;
+    }
+}
+
+@keyframes slideup2 {
+    from {
+        opacity: 0%;
+        padding-top: 30%;
+    }
+    to {
+        opacity: 100%;
+        padding-top: 8%;
+    }
+}
